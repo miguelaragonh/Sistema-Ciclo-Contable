@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "Poppins",system-ui;
+}
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 100vh;
+    padding: 0 1.5rem;
+    color : #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(16, 118, 214, 0.8);
+}
+.sidebar:hover{
+    width: 20%;
+    transition: 0.5s;
+}
+.menu{
+    height: 95%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+.menu li{
+    padding: 14.5px;
+    margin: 8px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover{
+    background: #e0e0e058;
+}
+.menu a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu i{
+    font-size: 1.2rem;
+}
+
+/*Contenido Prinicipal*/
+.content-wrapper{
+    position: relative;
+    background-color: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 4px 0.2rem;
+    margin-bottom: 25px;
+}
+.header h2,span{
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.header button{
+    background: rgba(17, 79, 138, 0.8);
+    color: #fff;
+    height: 35px;
+    width: 125px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.header button:hover{
+    background: rgba(27, 127, 219, 0.8);
+    cursor: pointer;
+}
+.header-title{
+    color : rgba(17, 79, 138, 0.8);
+}
+
+.card-container{
+    background: #fff;
+    width: 95%;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card-title{
+    margin-bottom: 15px;
+    color: rgba(17, 79, 138, 0.8);
+}
+
+select{
+    border-bottom: 1px solid  rgba(17, 79, 138, 0.8);
+    margin-left: 10px;
+    margin-right: 25px;
+    width: 135px; 
+}
+
+label{
+    margin-right: 2px;
+    color: rgba(21, 91, 156, 0.8);
+}
+
+input{
+    text-align: center;
+    border-bottom: 1px solid  rgba(17, 79, 138, 0.8);
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 125px;
+}
+
+.card-wrapper button{
+    background: rgba(17, 79, 138, 0.8);
+    color: #fff;
+    height: 35px;
+    width: 125px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.card-wrapper button:hover{
+    background: rgba(27, 127, 219, 0.8);
+    cursor: pointer;
+}
+
+.info-wrapper{
+    background: #fff;
+    width: 95%;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.info-title{
+    margin-bottom: 15px;
+    color: rgba(17, 79, 138, 0.8);
+}
+
+.info-edit{
+    font-size: 18px;
+    background: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 20px 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(17, 79, 138, 0.8);
+    margin-bottom: 45px;
+}
+
+td{
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 0.5px solid rgba(17, 79, 138, 0.8);
+}
+
+tbody tr:hover{
+    background: rgba(165, 197, 228, 0.288);
+}
+
+tbody button{
+    background: none;
+    cursor: pointer;
+    color: rgba(17, 79, 138, 0.8);
+    font-size: 20px;
+    margin-right: 45px;
+}
+
+tbody button a{
+    background: none;
+    cursor: pointer;
+    color: rgba(17, 79, 138, 0.8);
+    font-size: 20px;
+}
